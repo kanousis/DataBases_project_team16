@@ -1,0 +1,146 @@
+student_id,current_semester,department,credits,member_id,first_name,last_name,street,number,PC,email,telephone,password
+1,9,ECE,20.0,1,Alexandros,Kokkinos,Panepistimiou,1,26441,up1234567@ac.upatras.gr,6983718922,1234
+2,3,ECE,20.0,2,Georgios,Kanousis,Panepistimiou,2,26440,up1234568@ac.upatras.gr,6984563726,1235
+1131895,9,ECE,3.74,1131895,Anna,Paraskevopoulos,Karatheodori,318,51103,up1131895@upatras.gr,6977665950,bT9*A+dL9
+1039250,8,ECE,38.26,1039250,Despina,Triantafyllou,Georgiadou,340,91073,up1039250@upatras.gr,6963106889,nU4!/$\t
+1196043,3,ECE,0.0,1196043,Melina,Aggelopoulos,Labonos,146,73995,up1196043@upatras.gr,6947545686,qY7{0Idi
+1075097,8,ECE,0.0,1075097,Olga,Papadopoulos,Aristogitonos,410,96276,up1075097@upatras.gr,6978392683,zS8@I>UPgm
+1015691,5,ECE,9.82,1015691,Anna,Aggelopoulos,Spefsippou,7,98644,up1015691@upatras.gr,6920793001,sV3\<zrEvHB
+1111994,8,ECE,8.36,1111994,Nikolaos,Karamanlis,Kallirrois,27,57749,up1111994@upatras.gr,6987695540,"hL0|=,L)"
+1029430,3,ECE,41.88,1029430,Giannis,Triantafyllou,Egosthenon,38,36491,up1029430@upatras.gr,6962059237,nY6'3D*s9r
+1195169,3,ECE,0.0,1195169,Dimitra,Kanellopoulos,Papandria,451,71370,up1195169@upatras.gr,6997968220,bS6'@Tk)cND
+1161863,2,ECE,4.59,1161863,Aggelos,Petrou,Proussis,301,57350,up1161863@upatras.gr,6906294487,lA7=@LB<Kn&
+1124290,7,ECE,23.1,1124290,Haris,Ioannidis,Konitsis,122,58158,up1124290@upatras.gr,6975910166,"xX0'3EN~3H,{_su"
+1089343,5,ECE,40.29,1089343,Eleni,Stefanidis,Sarkoudinou M.,57,95063,up1089343@upatras.gr,6974466910,xT2*B#.G{&0nI
+1040714,8,ECE,17.8,1040714,Paraskevi,Kapetanios,Metaxa Andrea,225,45167,up1040714@upatras.gr,6942717797,dR7>9fvX
+1054640,1,ECE,10.69,1054640,Lito,Kotsis,Parodos Plateon,429,95877,up1054640@upatras.gr,6925958141,iK1?#k3>.0gU7.
+1081805,7,ECE,0.0,1081805,Zoi,Dimitriadis,Andritsenis,208,15363,up1081805@upatras.gr,6923531213,pA1(U1OKXa`4
+1198008,3,ECE,0.0,1198008,Spyros,Venizelos,Anthipolochagou Regoukou,321,67435,up1198008@upatras.gr,6945834119,"mF8{qR""#8,Z("
+1195560,3,ECE,8.46,1195560,Evangelos,Koutroumanis,Akratas,414,74772,up1195560@upatras.gr,6930637970,eN3)D0YvjVN2
+1175841,4,ECE,3.4,1175841,Melina,Kanellopoulos,Aristarchou,461,75613,up1175841@upatras.gr,6970958380,dY6*t{1P&4EsR
+1133869,3,ECE,28.8,1133869,Andreas,Venizelos,Alitsis,329,50661,up1133869@upatras.gr,6963297675,kX5_9F'1{)YL{z
+1075788,3,ECE,1.7,1075788,Nikolaos,Kotsis,Dimitsanas,42,93543,up1075788@upatras.gr,6976419762,rM1&bV(L{|B|
+1191447,2,ECE,28.11,1191447,Athina,Dimitriadis,Ilektras,14,18862,up1191447@upatras.gr,6991654815,aF3}3SD$ahxDVx
+1129558,2,ECE,0.65,1129558,Olga,Vasileiou,Kanari Square,425,93833,up1129558@upatras.gr,6918001785,vP2+x.`LC{K5c
+1135258,1,ECE,15.11,1135258,Aris,Alexandrou,Aristippou,195,19478,up1135258@upatras.gr,6964925995,tQ5*UXQ<0v
+1072961,6,ECE,33.54,1072961,Paraskevi,Raptis,Zinodorou,304,70413,up1072961@upatras.gr,6933584284,"nB5""""sV_xa=K5"
+1188680,7,ECE,3.38,1188680,Marietta,Kotsovos,Agion Assomaton,120,24806,up1188680@upatras.gr,6928620722,oR2!h<0z``
+1145573,7,ECE,0.0,1145573,Kostas,Antoniou,Tripoleos,66,44984,up1145573@upatras.gr,6918875973,cL3'C&qQ`r
+1085614,9,ECE,0.0,1085614,Marinos,Kotzias,Pitanis,165,30827,up1085614@upatras.gr,6966506999,lX4*h/9IAC
+1182600,7,ECE,13.46,1182600,Thodoris,Kotzias,Kazazi,462,85478,up1182600@upatras.gr,6946100674,sD2@Dy*v(nyN
+1127523,5,ECE,5.93,1127523,Despina,Konstantinou,Gennadiou Ioanni,54,72130,up1127523@upatras.gr,6932109428,"cD3`HJ!``,i|_"
+1155293,2,ECE,11.92,1155293,Dimitris,Fotiadis,Lokridos,41,18640,up1155293@upatras.gr,6942395626,"xY8,H3kVgTIaKt"
+1020016,4,ECE,40.29,1020016,Despina,Paraskevopoulos,Vassileos Irakliou,114,12041,up1020016@upatras.gr,6997805312,sZ7_vkgT@80d9*c
+1040974,8,ECE,46.15,1040974,Nikolaos,Kanellopoulos,Kouzi,137,29152,up1040974@upatras.gr,6979026773,pU9&1d4='I
+1081157,7,ECE,15.4,1081157,Marinos,Konstantinou,Androutsou Georgiou,405,99835,up1081157@upatras.gr,6944551933,vK3~fK.E=pW
+1187974,4,ECE,0.0,1187974,Giorgos,Michalopoulos,Anagnostopoulou,97,89232,up1187974@upatras.gr,6934957104,"aR1&|""ncb=3pbT"
+1100222,9,ECE,3.17,1100222,Stefanos,Stavrou,Chalkododos,349,87530,up1100222@upatras.gr,6938114312,dZ3.?7EU=FVaz(8*
+1024326,5,ECE,0.0,1024326,Kostas,Papanikolaou,Naxou,41,27383,up1024326@upatras.gr,6968959543,cP1+/(WAB
+1075176,8,ECE,3.88,1075176,Lito,Antoniou,Miniak,477,52123,up1075176@upatras.gr,6991155019,jT6<fe`SVw@Jr~qg
+1183569,6,ECE,0.0,1183569,Roxani,Zografos,Filippidou (platia Viktorias),269,68939,up1183569@upatras.gr,6959695752,bF8`@>Tm}*1
+1074660,4,ECE,0.0,1074660,Giannis,Giannakis,Afedouli,141,40429,up1074660@upatras.gr,6994098915,sV2~OPR}zdH$'
+1166713,6,ECE,12.04,1166713,Marietta,Tzikas,Deligiannaki,71,27891,up1166713@upatras.gr,6977645459,"sO6*fj`W#oy""7wS"
+1122630,8,ECE,10.53,1122630,Thodoris,Leventis,Merkouri Spirou,433,86068,up1122630@upatras.gr,6950172847,"hK9""_i_1GO!!GO"
+1085967,5,ECE,0.0,1085967,Panagiotis,Sotiropoulos,Ippokratous,403,59300,up1085967@upatras.gr,6972466056,tX9+.u<dQehPv1\
+1188896,5,ECE,17.83,1188896,Vasilis,Giannakis,Kanellopoulou Panagioti Avenue,39,54672,up1188896@upatras.gr,6927852483,vN3(2'!*
+1194507,9,ECE,0.01,1194507,Christos,Fotiadis,Praxitelous,150,26141,up1194507@upatras.gr,6988896185,hK7.YlNP}q{
+1164287,4,ECE,0.0,1164287,Lito,Panagiotou,Lakonias,202,82743,up1164287@upatras.gr,6935365770,"nA2@#DR""k@QWt"
+1160966,7,ECE,30.15,1160966,Paraskevi,Leventis,Botsari Toussa,261,44334,up1160966@upatras.gr,6993128264,"dW7+Yp""tn"
+1067235,3,ECE,0.0,1067235,Kalliopi,Kouris,Lomvardou Kon.,230,47514,up1067235@upatras.gr,6923949271,xN6\LGjN<C/NkJ
+1086450,2,ECE,0.0,1086450,Despina,Daskalakis,Eakou,481,31557,up1086450@upatras.gr,6968479738,gE8{La{t
+1184756,3,ECE,28.87,1184756,Lito,Papanikolaou,Siganeou,340,86323,up1184756@upatras.gr,6946204412,pM2*BQOes+y>
+1043967,4,ECE,0.0,1043967,Marinos,Giannakis,Lokridos,183,60262,up1043967@upatras.gr,6984011065,"mJ8.5B,Wj5!)%pY"
+1008478,9,ECE,39.31,1008478,Giannis,Christodoulou,Zolioti (agios Padeleimonas),319,62982,up1008478@upatras.gr,6981702175,qR8}BpL*
+1199999,2,ECE,0.0,1199999,Alexandros,Georgiou,Panepistimiou,123,12345,up1199999@upatras.gr,6901234567,aB1!cD2eF
+1199998,3,ECE,23.45,1199998,Ioanna,Papadopoulou,Ermou,456,23456,up1199998@upatras.gr,6912345678,bC2@dE3fG
+1199997,4,ECE,34.56,1199997,Konstantinos,Nikolaou,Patision,789,34567,up1199997@upatras.gr,6923456789,cD3#eF4gH
+1199996,5,ECE,0.0,1199996,Elena,Christou,Akadimias,101,45678,up1199996@upatras.gr,6934567890,dE4$gH5iJ
+1199995,6,ECE,0.0,1199995,Panagiotis,Ioannou,Stadiou,202,56789,up1199995@upatras.gr,6945678901,eF5%hI6jK
+1199994,7,ECE,0.0,1199994,Marina,Petrou,Kolokotroni,303,67890,up1199994@upatras.gr,6956789012,fG6^iJ7kL
+1199993,8,ECE,0.0,1199993,Andreas,Stefanou,Mitropoleos,404,78901,up1199993@upatras.gr,6967890123,gH7&iK8lM
+1199992,9,ECE,0.0,1199992,Georgia,Karagiorgos,Panormou,505,89012,up1199992@upatras.gr,6978901234,hI8*jL9mN
+1199991,1,ECE,0.0,1199991,Christos,Alexiou,Marni,606,90123,up1199991@upatras.gr,6989012345,iJ9(kM0nO
+1199990,2,ECE,12.34,1199990,Anna,Georgiou,Solonos,707,12345,up1199990@upatras.gr,6990123456,jK0!nO1pQ
+1199989,3,ECE,0.0,1199989,Ioannis,Papadopoulos,Skoufa,808,23456,up1199989@upatras.gr,6901234567,kL1@oP2qR
+1199988,4,ECE,34.56,1199988,Konstantina,Nikolaou,Akadimias,909,34567,up1199988@upatras.gr,6912345678,lM2#pQ3rS
+1199987,5,ECE,0.0,1199987,Elena,Christou,Ermou,101,45678,up1199987@upatras.gr,6923456789,mN3$dR4sT
+1199986,6,ECE,0.0,1199986,Panagiotis,Ioannou,Patision,202,56789,up1199986@upatras.gr,6934567890,nO4%eS5tU
+1199985,7,ECE,0.0,1199985,Marina,Petrou,Stadiou,303,67890,up1199985@upatras.gr,6945678901,oP5^fT6uV
+1199984,8,ECE,0.0,1199984,Andreas,Stefanou,Kolokotroni,404,78901,up1199984@upatras.gr,6956789012,pQ6&gU7vW
+1199983,9,ECE,0.0,1199983,Georgia,Karagiorgos,Mitropoleos,505,89012,up1199983@upatras.gr,6967890123,qR7*hV8wX
+1199982,1,ECE,0.0,1199982,Christos,Alexiou,Panormou,606,90123,up1199982@upatras.gr,6978901234,rS8(iW9xY
+1199981,2,ECE,0.0,1199981,Anna,Georgiou,Marni,707,12345,up1199981@upatras.gr,6989012345,sT9!jX0yZ
+1199980,3,ECE,0.0,1199980,Ioannis,Papadopoulos,Solonos,808,23456,up1199980@upatras.gr,6990123456,tU0@kY1zA
+1199979,4,ECE,0.0,1199979,Konstantina,Nikolaou,Skoufa,909,34567,up1199979@upatras.gr,6901234567,uV1#lZ2aB
+1199978,5,ECE,0.0,1199978,Elena,Christou,Akadimias,101,45678,up1199978@upatras.gr,6912345678,vW2$mA3bC
+1199977,6,ECE,0.0,1199977,Panagiotis,Ioannou,Ermou,202,56789,up1199977@upatras.gr,6923456789,wX3%nB4cD
+1199976,7,ECE,0.0,1199976,Marina,Petrou,Patision,303,67890,up1199976@upatras.gr,6934567890,xY4^oC5dE
+1199975,8,ECE,0.0,1199975,Andreas,Stefanou,Stadiou,404,78901,up1199975@upatras.gr,6945678901,yZ5&pD6eF
+1199974,9,ECE,0.0,1199974,Georgia,Karagiorgos,Kolokotroni,505,89012,up1199974@upatras.gr,6956789012,zA6*qE7fG
+1199973,1,ECE,0.0,1199973,Christos,Alexiou,Mitropoleos,606,90123,up1199973@upatras.gr,6967890123,aB7(rF8gH
+1199972,2,ECE,0.0,1199972,Anna,Georgiou,Panormou,707,12345,up1199972@upatras.gr,6978901234,bC8!sG9hI
+1199971,3,ECE,0.0,1199971,Ioannis,Papadopoulos,Marni,808,23456,up1199971@upatras.gr,6989012345,cD9@tH0iJ
+1199970,4,ECE,0.0,1199970,Konstantina,Nikolaou,Solonos,909,34567,up1199970@upatras.gr,6990123456,dE0#uI1jK
+1199969,5,ECE,0.0,1199969,Elena,Christou,Skoufa,101,45678,up1199969@upatras.gr,6901234567,eF1$vJ2kL
+1199968,6,ECE,0.0,1199968,Panagiotis,Ioannou,Akadimias,202,56789,up1199968@upatras.gr,6912345678,fG2%wK3lM
+1199967,7,ECE,0.0,1199967,Marina,Petrou,Ermou,303,67890,up1199967@upatras.gr,6923456789,gH3^xL4mN
+1199966,8,ECE,0.0,1199966,Andreas,Stefanou,Patision,404,78901,up1199966@upatras.gr,6934567890,hI4&yM5nO
+1199965,9,ECE,0.0,1199965,Georgia,Karagiorgos,Stadiou,505,89012,up1199965@upatras.gr,6945678901,iJ5*zN6oP
+1199964,1,ECE,0.0,1199964,Christos,Alexiou,Kolokotroni,606,90123,up1199964@upatras.gr,6956789012,jK6(rO7pQ
+1199963,2,ECE,12.34,1199963,Anna,Georgiou,Mitropoleos,707,12345,up1199963@upatras.gr,6967890123,kL7!sP8qR
+1199962,3,ECE,23.45,1199962,Ioannis,Papadopoulos,Panormou,808,23456,up1199962@upatras.gr,6978901234,lM8@tQ9rS
+1199961,4,ECE,34.56,1199961,Konstantina,Nikolaou,Marni,909,34567,up1199961@upatras.gr,6989012345,mN9#uR0sT
+1199960,5,ECE,45.67,1199960,Elena,Christou,Solonos,101,45678,up1199960@upatras.gr,6990123456,nO0$vS1tU
+1199959,6,ECE,0.0,1199959,Panagiotis,Ioannou,Skoufa,202,56789,up1199959@upatras.gr,6901234567,oP1%wT2uV
+1199958,7,ECE,0.0,1199958,Marina,Petrou,Akadimias,303,67890,up1199958@upatras.gr,6912345678,pQ2^xU3vW
+1199957,8,ECE,0.0,1199957,Andreas,Stefanou,Ermou,404,78901,up1199957@upatras.gr,6923456789,qR3&yV4wX
+1199956,9,ECE,0.0,1199956,Georgia,Karagiorgos,Patision,505,89012,up1199956@upatras.gr,6934567890,rS4*zW5xY
+1199955,1,ECE,0.0,1199955,Christos,Alexiou,Stadiou,606,90123,up1199955@upatras.gr,6945678901,sT5(rX6yZ
+1199954,2,ECE,12.34,1199954,Anna,Georgiou,Kolokotroni,707,12345,up1199954@upatras.gr,6956789012,tU6!vY7zA
+1199953,3,ECE,23.45,1199953,Ioannis,Papadopoulos,Mitropoleos,808,23456,up1199953@upatras.gr,6967890123,uV7@wZ8aB
+1199952,4,ECE,34.56,1199952,Konstantina,Nikolaou,Panormou,909,34567,up1199952@upatras.gr,6978901234,vW8#xA9bC
+1199951,5,ECE,45.67,1199951,Elena,Christou,Marni,101,45678,up1199951@upatras.gr,6989012345,wX9$dB0cD
+1199950,6,ECE,0.0,1199950,Panagiotis,Ioannou,Solonos,202,56789,up1199950@upatras.gr,6990123456,xY0%eC1dE
+1199949,7,ECE,0.0,1199949,Marina,Petrou,Skoufa,303,67890,up1199949@upatras.gr,6901234567,yZ1^fD2eF
+1199948,8,ECE,0.0,1199948,Andreas,Stefanou,Akadimias,404,78901,up1199948@upatras.gr,6912345678,zA2&gE3fG
+1199947,9,ECE,0.0,1199947,Georgia,Karagiorgos,Ermou,505,89012,up1199947@upatras.gr,6923456789,aB3*hF4gH
+1199946,1,ECE,0.0,1199946,Christos,Alexiou,Patision,606,90123,up1199946@upatras.gr,6934567890,bC4(iG5hI
+1199945,2,ECE,12.34,1199945,Anna,Georgiou,Stadiou,707,12345,up1199945@upatras.gr,6945678901,cD5!jH6iJ
+1199944,3,ECE,23.45,1199944,Ioannis,Papadopoulos,Kolokotroni,808,23456,up1199944@upatras.gr,6956789012,dE6@kI7jK
+1199943,4,ECE,34.56,1199943,Konstantina,Nikolaou,Mitropoleos,909,34567,up1199943@upatras.gr,6967890123,eF7#lJ8kL
+1199942,5,ECE,45.67,1199942,Elena,Christou,Panormou,101,45678,up1199942@upatras.gr,6978901234,fG8$mK9lM
+1199941,6,ECE,0.0,1199941,Panagiotis,Ioannou,Marni,202,56789,up1199941@upatras.gr,6989012345,gH9%nL0mN
+1199940,7,ECE,0.0,1199940,Marina,Petrou,Solonos,303,67890,up1199940@upatras.gr,6990123456,hI0^oM1nO
+1199939,8,ECE,0.0,1199939,Andreas,Stefanou,Skoufa,404,78901,up1199939@upatras.gr,6901234567,iJ1&pN2oP
+1199938,9,ECE,0.0,1199938,Georgia,Karagiorgos,Akadimias,505,89012,up1199938@upatras.gr,6912345678,jK2*qO3pQ
+1199937,1,ECE,0.0,1199937,Christos,Alexiou,Ermou,606,90123,up1199937@upatras.gr,6923456789,kL3(rP4qR
+1199936,2,ECE,12.34,1199936,Anna,Georgiou,Patision,707,12345,up1199936@upatras.gr,6934567890,lM4!sQ5rS
+1199935,3,ECE,23.45,1199935,Ioannis,Papadopoulos,Stadiou,808,23456,up1199935@upatras.gr,6945678901,mN5@tR6sT
+1199934,4,ECE,0.0,1199934,Konstantina,Nikolaou,Kolokotroni,909,34567,up1199934@upatras.gr,6956789012,nO6#uS7tU
+1199933,5,ECE,0.0,1199933,Elena,Christou,Mitropoleos,101,45678,up1199933@upatras.gr,6967890123,oP7$vT8uV
+1199932,6,ECE,0.0,1199932,Panagiotis,Ioannou,Panormou,202,56789,up1199932@upatras.gr,6978901234,pQ8%wU9vW
+1199931,7,ECE,0.0,1199931,Marina,Petrou,Marni,303,67890,up1199931@upatras.gr,6989012345,qR9^xV0wX
+1199930,8,ECE,8.90,1199930,Andreas,Stefanou,Solonos,404,78901,up1199930@upatras.gr,6990123456,rS0&yW1xY
+1199929,9,ECE,0.0,1199929,Georgia,Karagiorgos,Skoufa,505,89012,up1199929@upatras.gr,6901234567,sT1*zX2yZ
+1199928,1,ECE,0.0,1199928,Christos,Alexiou,Akadimias,606,90123,up1199928@upatras.gr,6912345678,tU2(rY3zA
+1199927,2,ECE,12.34,1199927,Anna,Georgiou,Ermou,707,12345,up1199927@upatras.gr,6923456789,uV3!sZ4aB
+1199926,3,ECE,3.45,1199926,Ioannis,Papadopoulos,Patision,808,23456,up1199926@upatras.gr,6934567890,vW4@tA5bC
+1199925,4,ECE,4.56,1199925,Konstantina,Nikolaou,Stadiou,909,34567,up1199925@upatras.gr,6945678901,wX5#uB6cD
+1199924,5,ECE,45.67,1199924,Elena,Christou,Kolokotroni,101,45678,up1199924@upatras.gr,6956789012,xY6$vC7dE
+1199923,6,ECE,6.78,1199923,Panagiotis,Ioannou,Mitropoleos,202,56789,up1199923@upatras.gr,6967890123,yZ7%wD8eF
+1199922,7,ECE,0.0,1199922,Marina,Petrou,Panormou,303,67890,up1199922@upatras.gr,6978901234,zA8^xE9fG
+1199921,8,ECE,8.90,1199921,Andreas,Stefanou,Marni,404,78901,up1199921@upatras.gr,6989012345,aB9&yF0gH
+1199920,9,ECE,0.0,1199920,Georgia,Karagiorgos,Solonos,505,89012,up1199920@upatras.gr,6990123456,bC0*zG1hI
+1199919,1,ECE,0.0,1199919,Christos,Alexiou,Skoufa,606,90123,up1199919@upatras.gr,6901234567,cD1(rH2iJ
+1199918,2,ECE,12.34,1199918,Anna,Georgiou,Akadimias,707,12345,up1199918@upatras.gr,6912345678,dE2!sI3jK
+1199917,3,ECE,23.45,1199917,Ioannis,Papadopoulos,Ermou,808,23456,up1199917@upatras.gr,6923456789,eF3@tJ4kL
+1199916,4,ECE,4.56,1199916,Konstantina,Nikolaou,Patision,909,34567,up1199916@upatras.gr,6934567890,fG4#uK5lM
+1199915,5,ECE,5.67,1199915,Elena,Christou,Stadiou,101,45678,up1199915@upatras.gr,6945678901,gH5$vL6mN
+1199914,6,ECE,6.78,1199914,Panagiotis,Ioannou,Kolokotroni,202,56789,up1199914@upatras.gr,6956789012,hI6%wM7nO
+1199913,7,ECE,7.89,1199913,Marina,Petrou,Mitropoleos,303,67890,up1199913@upatras.gr,6967890123,iJ7^xN8oP
+1199912,8,ECE,8.90,1199912,Andreas,Stefanou,Panormou,404,78901,up1199912@upatras.gr,6978901234,jK8&yO9pQ
+1199911,9,ECE,0.0,1199911,Georgia,Karagiorgos,Marni,505,89012,up1199911@upatras.gr,6989012345,kL9*zP0qR
+1199910,1,ECE,0.0,1199910,Christos,Alexiou,Solonos,606,90123,up1199910@upatras.gr,6990123456,lM0(rQ1sT
+1199909,2,ECE,0.0,1199909,Anna,Georgiou,Skoufa,707,12345,up1199909@upatras.gr,6901234567,mN1!sR2tU
+1199908,3,ECE,3.45,1199908,Ioannis,Papadopoulos,Akadimias,808,23456,up1199908@upatras.gr,6912345678,nO2@tS3uV
+1199907,4,ECE,4.56,1199907,Konstantina,Nikolaou,Ermou,909,34567,up1199907@upatras.gr,6923456789,oP3#uT4vW
