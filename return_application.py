@@ -7,6 +7,7 @@ class ReturnApplicationFrame(tk.Frame):
     def __init__(self, master, student_id):
         super().__init__(master, bg='#eaddc0')
         self.master = master
+        self.master.geometry("700x500")
         self.student_id = student_id
         self.counter = 0
         self.total_books = []
@@ -16,7 +17,7 @@ class ReturnApplicationFrame(tk.Frame):
     def create_content(self):
         tk.Label(self, text="Return Selection", font=("Arial", 18, "bold"), bg='#eaddc0').grid(row=0, column=0, columnspan=2, padx=10, pady=10)
         # Create canvas for books
-        self.canvas_books = tk.Canvas(self, height=300, width=800, bg='#eaddc0')
+        self.canvas_books = tk.Canvas(self, height=300, width=600, bg='#eaddc0')
         self.canvas_books.grid(row=1, column=0, padx=10, pady=10, sticky="nsew")
         
         # Create vertical scrollbar for the canvas
@@ -85,7 +86,7 @@ class ReturnApplicationFrame(tk.Frame):
             command=lambda: self.complete_application(),
             bg='#eaddc0'
         )
-        complete_button.grid(row=3+len(self.total_books), column=1, pady=20)
+        complete_button.grid(row=4+len(self.total_books), column=0, pady=20)
 
     def _on_mousewheel(self, event):
         self.canvas_books.yview_scroll(-1 * (event.delta // 120), "units")
@@ -127,10 +128,37 @@ class ReturnApplicationFrame(tk.Frame):
                 VALUES (?, ?)
             """
             cursor.execute(contains_query, (return_id, isbn))
-            connection.commit()
 
+
+            # Fetch the credits of the book
+            credits_query = """
+                SELECT credits
+                FROM BOOK
+                WHERE ISBN = ?
+            """
+            cursor.execute(credits_query, (isbn,))
+            book_credits = cursor.fetchone()[0]
+
+            # Fetch the current credits of the student
+            cursor.execute("SELECT credits FROM STUDENT WHERE student_id = ?", (self.student_id,))
+            student_credits = cursor.fetchone()[0]
+             
+            # Calculate the new total credits
+            new_total_credits = student_credits + book_credits
+
+            # Update the student's credits
+            update_credits_query = """
+                UPDATE STUDENT
+                SET credits = ?
+                WHERE student_id = ?
+            """
+            cursor.execute(update_credits_query, (new_total_credits, self.student_id))
+             
+        connection.commit()
+        connection.close()
         tk.messagebox.showinfo("Application Completed", "Your application has been successfully completed!")
         self.go_back()
+
 
     def get_books(self):
         conn = sqlite3.connect("academia.db")
@@ -162,3 +190,4 @@ class ReturnApplicationFrame(tk.Frame):
         self.destroy()
         purchase_frame = WelcomeFrame(self.master, member_id=self.student_id)
         purchase_frame.pack()
+

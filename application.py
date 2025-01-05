@@ -8,8 +8,6 @@ class ApplicationFrame(tk.Frame):
         self.student_id = student_id
         self.grid(row=0, column=0, sticky="nsew")
         self.master.geometry("1200x1000")
-        self.master.title("academia")
-        self.master.geometry("1200x1000")
         self.selected_books_by_course = {}
         self.part1_selected_books = []  
         self.part1_var_book_isbn = [] # Holds checkbox values, book titles and ISBNs for part 1 books
@@ -33,7 +31,7 @@ class ApplicationFrame(tk.Frame):
         tk.Label(self, text="Textbook Selection", font=("Arial", 18, "bold"), bg='#eaddc0').grid(row=0, column=0, columnspan=2, padx=10, pady=10)
 
         semester_label = f"Current Semester: {semester}"
-        credits_label = f"Credits: {credits}"
+        credits_label = f"Credits: {credits:.2f}"
         tk.Label(self, text=semester_label, font=("Arial", 10), bg='#eaddc0').grid(row=1, column=0, padx=10, pady=5, sticky="w")
         tk.Label(self, text=credits_label, font=("Arial", 10), bg='#eaddc0').grid(row=1, column=1, padx=10, pady=5, sticky="w")
     
@@ -178,7 +176,7 @@ class ApplicationFrame(tk.Frame):
                 self.part2_var_book_isbn.append((book_var, book_title, isbn))
 
                 # Create label for the book
-                book_label = tk.Label(book_frame, text=f"({credits}){book_title}", width=50, anchor="w", bg='#eaddc0')
+                book_label = tk.Label(book_frame, text=f"({credits:.2f}){book_title}", width=50, anchor="w", bg='#eaddc0')
                 book_label.pack(side="left", padx=5)
                 
                 # Create a checkbox for the book
@@ -359,7 +357,7 @@ class ApplicationFrame(tk.Frame):
         total_credits = 0
         for var, credits in self.selected_books:
             if var.get():  # If the checkbox is selected
-                total_credits += credits
+                total_credits += credits # total application credits for selected books
 
         available_credits = self.get_student_credits()
         remaining_credits = available_credits - total_credits
@@ -396,20 +394,20 @@ class ApplicationFrame(tk.Frame):
                                 self.total_books.append((book, isbn))
 
                         # Open the summary page with selected books
-                        self.final_selection(self.student_id, self.total_books, self.get_student_semester())
+                        self.final_selection(self.student_id, self.total_books, self.get_student_semester(), remaining_credits, total_credits)
             else:
                 tk.messagebox.showerror("Error", "No books selected for current semester!")
         else:
             # Display an error message
             tk.messagebox.showerror("Error", "You have selected more books than your available credits!")
 
-    def final_selection(self, student_id,total_books, semester):
-        total_books = total_books
+    def final_selection(self, student_id,total_books, semester, remaining_credits, application_credits):
+        
 
         if total_books:  
             # Open the book details window
             from final_selection import FinalSelection
-            final_selection = FinalSelection(self, student_id,total_books, semester)
+            final_selection = FinalSelection(self, student_id,total_books, semester, remaining_credits, application_credits)
             final_selection.grab_set()  # Block interaction with the parent window until it's closed
         else:
             print("No books selected.")

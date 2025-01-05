@@ -3,25 +3,37 @@ import sqlite3
 import datetime
 
 class FinalSelection(tk.Toplevel):
-    def __init__(self, master, student_id, total_books, semester):
+    def __init__(self, master, student_id, total_books, semester, remaining_credits, application_credits):
         super().__init__(master)
         self.title("Final Selection")
         self.total_books = total_books
         self.master = master
         self.student_id = student_id
         self.semester = semester
-        self.geometry("800x500")
+        self.remaining_credits = remaining_credits
+        self.application_credits = application_credits
+        self.geometry("700x500")
         self.configure(bg='#eaddc0')
         self.create_content()
 
     def create_content(self):
         tk.Label(self, text="Final Selection", font=("Arial", 18, "bold"), bg='#eaddc0').grid(row=0, column=0, columnspan=2, padx=10, pady=10)
         # Create canvas for books
-        canvas_books = tk.Canvas(self, height=300, width=800, bg='#eaddc0')
-        canvas_books.grid(row=1, column=0, padx=10, pady=10, sticky="nsew")
+        self.canvas_books = tk.Canvas(self, height=300, width=600, bg='#eaddc0')
+        self.canvas_books.grid(row=1, column=0, padx=10, pady=10, sticky="nsew")
         
-        books_frame = tk.Frame(canvas_books, bg='#eaddc0')
+        # Create vertical scrollbar for the canvas
+        scrollbar_books = tk.Scrollbar(self, orient="vertical", command=self.canvas_books.yview)
+        scrollbar_books.grid(row=1, column=1, sticky="ns")
+        self.canvas_books.configure(yscrollcommand=scrollbar_books.set)   
+
+        books_frame = tk.Frame(self.canvas_books, bg='#eaddc0')
         tk.Label(books_frame, text="Total Books:", font=("Arial", 12, "bold"), bg='#eaddc0').grid(row=0, column=0, padx=10, pady=5, sticky="w")
+
+        books_frame.bind("<Configure>", lambda e: self.canvas_books.configure(scrollregion=self.canvas_books.bbox("all")))
+        # Bind mouse wheel scrolling
+        self.canvas_books.bind("<Enter>", lambda e: self.canvas_books.bind_all("<MouseWheel>", self._on_mousewheel))
+        self.canvas_books.bind("<Leave>", lambda e: self.canvas_books.unbind_all("<MouseWheel>"))
 
         if self.total_books:
             connection = sqlite3.connect("academia.db")
@@ -59,9 +71,9 @@ class FinalSelection(tk.Toplevel):
         else:
             tk.Label(books_frame, text="No subjects found for this semester", fg="gray", bg='#eaddc0').grid(row=1, column=0, padx=10, pady=5)
 
-        canvas_books.create_window((0, 0), window=books_frame, anchor="nw")
+        self.canvas_books.create_window((0, 0), window=books_frame, anchor="nw")
         books_frame.update_idletasks()
-        canvas_books.config(scrollregion=canvas_books.bbox("all"))
+        self.canvas_books.config(scrollregion=self.canvas_books.bbox("all"))
 
 
         # Back and Finish buttons
@@ -98,10 +110,10 @@ class FinalSelection(tk.Toplevel):
 
         # Insert into APPLICATION table
         application_query = """
-            INSERT INTO APPLICATION (application_id, date, semester, student_id)
-            VALUES (?, ?, ?, ?)
+            INSERT INTO APPLICATION (application_id, date, semester, student_id, application_credits)
+            VALUES (?, ?, ?, ?, ?)
         """
-        cursor.execute(application_query, (application_id, date, self.semester, self.student_id))
+        cursor.execute(application_query, (application_id, date, self.semester, self.student_id, self.application_credits))
 
         # Insert into Consists_Of table
         consists_of_query = """
@@ -110,8 +122,19 @@ class FinalSelection(tk.Toplevel):
         """
         for book, isbn in self.total_books:
             cursor.execute(consists_of_query, (application_id, isbn))
+    
+        # Update the student's credits
+        update_credits_query = """
+            UPDATE STUDENT
+            SET credits = ?
+            WHERE student_id = ?
+        """
+        cursor.execute(update_credits_query, (self.remaining_credits, self.student_id))
 
         connection.commit()
         connection.close()
         tk.messagebox.showinfo("Application Completed", "Your application has been successfully completed!")
         self.destroy()
+
+    def _on_mousewheel(self, event):
+        self.canvas_books.yview_scroll(-1 * (event.delta // 120), "units")

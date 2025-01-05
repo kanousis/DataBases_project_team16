@@ -111,14 +111,6 @@ class WelcomeFrame(tk.Frame):
         self.destroy()
         self.rate_frame=MyBooksFrame(self.master,member_id=self.member_id)
         self.rate_frame.pack()    
-        
-    def application(self):
-        from application import ApplicationFrame
-        if hasattr(self, 'application_frame'):
-            return
-        self.destroy()
-        self.application_frame = ApplicationFrame(self.master, student_id=self.member_id)
-        self.application_frame.pack()
 
     def return_application(self):
         from return_application import ReturnApplicationFrame
@@ -128,3 +120,41 @@ class WelcomeFrame(tk.Frame):
         self.return_application_frame = ReturnApplicationFrame(self.master, student_id=self.member_id)
         self.return_application_frame.pack()
 
+    def application(self):
+        import sqlite3
+
+        # Connect to the database
+        connection = sqlite3.connect('academia.db')
+        cursor = connection.cursor()
+
+        # Get the student_id and current_semester
+        cursor.execute("SELECT student_id, current_semester FROM STUDENT WHERE student_id = ?", (self.member_id,))
+        student = cursor.fetchone()
+
+        if student:
+            student_id, current_semester = student
+            application_id = int(f"{student_id}{current_semester}")
+
+            # Check if the application exists
+            cursor.execute("SELECT * FROM APPLICATION WHERE application_id = ?", (application_id,))
+            application = cursor.fetchone()
+
+            if application:
+                # Print the application details
+                from old_application import OldApplicationFrame
+                if hasattr(self, 'application_frame'):
+                    return
+                # Proceed to the application frame
+                self.destroy()
+                self.old_application_frame = OldApplicationFrame(self.master, student_id=self.member_id, application_id=application_id)
+                self.old_application_frame.pack()                
+            else:
+                from application import ApplicationFrame
+                if hasattr(self, 'application_frame'):
+                    return
+                # Proceed to the application frame
+                self.destroy()
+                self.application_frame = ApplicationFrame(self.master, student_id=self.member_id)
+                self.application_frame.pack()
+
+        connection.close()
