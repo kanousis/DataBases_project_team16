@@ -7,7 +7,7 @@ class ReturnApplicationFrame(tk.Frame):
     def __init__(self, master, student_id):
         super().__init__(master, bg='#eaddc0')
         self.master = master
-        self.master.geometry("700x500")
+        self.master.geometry("1000x500")
         self.student_id = student_id
         self.counter = 0
         self.total_books = []
@@ -17,7 +17,7 @@ class ReturnApplicationFrame(tk.Frame):
     def create_content(self):
         tk.Label(self, text="Return Selection", font=("Arial", 18, "bold"), bg='#eaddc0').grid(row=0, column=0, columnspan=2, padx=10, pady=10)
         # Create canvas for books
-        self.canvas_books = tk.Canvas(self, height=300, width=600, bg='#eaddc0')
+        self.canvas_books = tk.Canvas(self, height=300, width=950, bg='#eaddc0')
         self.canvas_books.grid(row=1, column=0, padx=10, pady=10, sticky="nsew")
         
         # Create vertical scrollbar for the canvas
@@ -152,7 +152,7 @@ class ReturnApplicationFrame(tk.Frame):
                 SET credits = ?
                 WHERE student_id = ?
             """
-            cursor.execute(update_credits_query, (new_total_credits, self.student_id))
+            cursor.execute(update_credits_query, (round(new_total_credits, 2), self.student_id))
              
         connection.commit()
         connection.close()
