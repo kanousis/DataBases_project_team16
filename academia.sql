@@ -81,6 +81,7 @@ CREATE TABLE IF NOT EXISTS "APPLICATION" (
 	"date" datetime NOT NULL,
 	"semester" integer NOT NULL,
 	"student_id" integer NOT NULL,
+	"application_credits" integer DEFAULT 0,
 	PRIMARY KEY ("application_id"),
 	FOREIGN KEY ("student_id") REFERENCES "STUDENT" ("student_id")
             ON UPDATE CASCADE

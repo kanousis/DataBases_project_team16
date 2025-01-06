@@ -40,7 +40,7 @@ class ApplicationFrame(tk.Frame):
         font=("Arial", 10), fg="blue", bg='#eaddc0').grid(row=2, column=0, columnspan=2, padx=10, pady=5, sticky="w")
 
         # Create canvas for courses
-        self.canvas_courses = tk.Canvas(self, height=200, width=1000, bg='#eaddc0')
+        self.canvas_courses = tk.Canvas(self, height=200, width=1050, bg='#eaddc0')
         self.canvas_courses.grid(row=3, column=0, padx=10, pady=10, sticky="nsew")
 
         # Horizontal Scrollbar
@@ -52,7 +52,7 @@ class ApplicationFrame(tk.Frame):
         self.canvas_courses.config(yscrollcommand=scrollbar_courses_vertical.set)
         scrollbar_courses_vertical.grid(row=3, column=1, sticky="ns")
         
-        courses_frame = tk.Frame(self.canvas_courses, width=1000, bg='#eaddc0')
+        courses_frame = tk.Frame(self.canvas_courses, width=1050, bg='#eaddc0')
         tk.Label(courses_frame, text="Subjects:", font=("Arial", 12, "bold"), bg='#eaddc0').grid(row=0, column=0, padx=10, pady=5, sticky="w")
 
         courses_frame.bind("<Configure>", lambda e: self.canvas_courses.configure(scrollregion=self.canvas_courses.bbox("all")))
@@ -395,6 +395,7 @@ class ApplicationFrame(tk.Frame):
 
                         # Open the summary page with selected books
                         self.final_selection(self.student_id, self.total_books, self.get_student_semester(), remaining_credits, total_credits)
+                        
             else:
                 tk.messagebox.showerror("Error", "No books selected for current semester!")
         else:

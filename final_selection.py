@@ -12,14 +12,14 @@ class FinalSelection(tk.Toplevel):
         self.semester = semester
         self.remaining_credits = remaining_credits
         self.application_credits = application_credits
-        self.geometry("700x500")
+        self.geometry("1000x500")
         self.configure(bg='#eaddc0')
         self.create_content()
 
     def create_content(self):
         tk.Label(self, text="Final Selection", font=("Arial", 18, "bold"), bg='#eaddc0').grid(row=0, column=0, columnspan=2, padx=10, pady=10)
         # Create canvas for books
-        self.canvas_books = tk.Canvas(self, height=300, width=600, bg='#eaddc0')
+        self.canvas_books = tk.Canvas(self, height=300, width=950, bg='#eaddc0')
         self.canvas_books.grid(row=1, column=0, padx=10, pady=10, sticky="nsew")
         
         # Create vertical scrollbar for the canvas
@@ -129,12 +129,16 @@ class FinalSelection(tk.Toplevel):
             SET credits = ?
             WHERE student_id = ?
         """
-        cursor.execute(update_credits_query, (self.remaining_credits, self.student_id))
+        cursor.execute(update_credits_query, (round(self.remaining_credits, 2), self.student_id))
 
         connection.commit()
         connection.close()
         tk.messagebox.showinfo("Application Completed", "Your application has been successfully completed!")
         self.destroy()
+        self.master.go_back()
+        
 
     def _on_mousewheel(self, event):
         self.canvas_books.yview_scroll(-1 * (event.delta // 120), "units")
+
+
